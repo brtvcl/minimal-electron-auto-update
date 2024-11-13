@@ -1,11 +1,11 @@
 {
   "name": "mini-electron",
-  "version": "1.0.1",
-  "main": "main.js",
+  "version": "2.0.1",
+  "main": "main/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --config electron-builder.js",
-    "publish": "electron-builder --config electron-builder.js --publish always "
+    "build": "electron-builder --config ./main/electron-builder.js",
+    "publish": "electron-builder --config ./main/electron-builder.js --publish always "
   },
   "keywords": [],
   "author": "",

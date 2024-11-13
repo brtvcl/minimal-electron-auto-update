@@ -8,8 +8,8 @@ module.exports = {
   },
   publish: {
     provider: "s3",
-    bucket: "electron",
-    endpoint: "http://localhost:9000",
-    region: "us-east-1",
+    bucket: process.env.BUCKET_NAME,
+    endpoint: process.env.BUCKET_ENDPOINT,
+    region: process.env.BUCKET_REGION,
   },
 };
