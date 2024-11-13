@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Minimal Electron App</title>
+  </head>
+  <body>
+    <h1>Hello, Electron!</h1>
+  </body>
+  <script>
+    async function printVersion() {
+
+      const version = await window.electron.appVersion();
+      console.log(`Electron version: ${version}`);
+      document.querySelector('h1').innerText = `Hello, Electron v${version}!`;
+    }
+
+    printVersion();
+  </script>
+</html>
